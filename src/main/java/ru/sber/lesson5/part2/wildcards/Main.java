@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-//Вы используете ?, когда хотите указать, что любой тип вас устраивает.
+//Вы используете ?, когда хотите указать, что любой тип вас устраивает. Чтобы указать хоть какой-то тип
 public class Main {
     public static void printList(List<Object> list) {
         for (Object x : list)
@@ -19,9 +19,9 @@ public class Main {
 
         List<Integer> numbers = new ArrayList<>();
         numbers.add(new Integer(42));
+        //Компилятор проверяет
         //List<Object> objects = numbers;
         //objects.add("forty two");
-        System.out.println(numbers.get(1));
     }
 }
 
@@ -109,5 +109,5 @@ class HeapPoll {
         System.out.println(strings.get(0));
     }
 }
-
+//Collection<String> -> List<String> -> ArrayList<String>
 
